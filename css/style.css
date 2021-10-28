@@ -1,6 +1,6 @@
 body{
     font-family: 'Alegreya Sans SC', serif;
-    background-image: url("../images/concrete_seamless.png");
+    background-image: url(../images/concrete_seamless.png);
     background-color: #f1f1f1;
 }
 
@@ -8,12 +8,14 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: space-between; */
 }
 
 
 .nav_links{
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
 }
 
 .nav_links a:visited, a:hover{
@@ -23,21 +25,22 @@ header{
 
 .pricing{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 20px 0;
-
 }
 
 .card > header{
     background: #288088;
     border: 2px solid #45ADAD;
     border-radius: 7px 7px 0 0;
+    padding: 20px 0;
 
 }
 
 .card, .card_big{
-    width: 450px;
+    flex-basis: 450px;
+
 }
 
 
@@ -82,14 +85,15 @@ header{
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .card{
-    flex-basis: 250px;
+        flex-basis: 250px;
     }
 
     .pricing{
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
@@ -119,7 +123,7 @@ header{
         flex-direction: row;
         justify-content: space-around;
     }
-    
+
 
     .pricing{
         display: flex;
@@ -138,11 +142,11 @@ header{
     }
 
     .pricing li:nth-child(even):after{
-        content:
+        content: "\1F44D"
     }
 
     .pricing li:nth-child(even):before{
-        content:
+        content: "\1F44D"
     }
 
     }
