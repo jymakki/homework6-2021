@@ -8,14 +8,15 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
+    z-index: 100;
+    position: sticky;
+    top: 0;
 }
 
 
 .nav_links{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .nav_links a:visited, a:hover{
@@ -30,17 +31,17 @@ header{
     align-items: center;
 }
 
-.card > header{
+.card header{
     background: #288088;
     border: 2px solid #45ADAD;
     border-radius: 7px 7px 0 0;
     padding: 20px 0;
+    z-index: 10;
 
 }
 
-.card, .card_big{
+.card{
     flex-basis: 450px;
-
 }
 
 
@@ -77,7 +78,8 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        position: sticky;
+        top: 0;
     }
 
     .nav_links{
@@ -128,8 +130,8 @@ header{
     .pricing{
         display: flex;
         align-items: flex-end;
-        position: absolute;
-        bottom: 0px;
+        flex-flow: row;
+        flex-wrap:nowrap;
     }
 
     .card{
@@ -142,11 +144,11 @@ header{
     }
 
     .pricing li:nth-child(even):after{
-        content: "\1F44D"
+        content: "\1F44D";
     }
 
-    .pricing li:nth-child(even):before{
-        content: "\1F44D"
+    .pricing li:nth-child(odd):before{
+        content: "\1F44D";
     }
 
     }
