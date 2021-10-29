@@ -131,7 +131,7 @@ header{
         display: flex;
         align-items: flex-end;
         flex-flow: row;
-        flex-wrap:nowrap;
+        flex-wrap: nowrap;
     }
 
     .card{
@@ -140,6 +140,10 @@ header{
     }
 
     .gallery{
+        display: none;
+    }
+
+    #gallery{
         display: none;
     }
 
